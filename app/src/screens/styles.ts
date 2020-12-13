@@ -15,6 +15,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: "white"
     },
+    containerCenterVertHor: {
+        flex: 1,
+        margin: 5,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: "white"
+    },
     flex: {
         flex: 1,
         // justifyContent: 'center',

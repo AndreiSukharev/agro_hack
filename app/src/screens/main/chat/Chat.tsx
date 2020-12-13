@@ -43,22 +43,22 @@ class Chat extends React.Component<any> {
     };
 
     analyzeMessage = (text : string) => {
-        const words : string[] = text.toLowerCase().split(' ');
-        let isFound = false;
+        // const words : string[] = text.toLowerCase().split(' ');
+        // let isFound = false;
         const newMessage : IMessage = {
             ...messageMock,
             createdAt: new Date(),
             _id: String(this.state.messages.length + 1),
         }
-        words.forEach(word => {
-            if (analyzer[word]) {
-                newMessage.text = analyzer[word];
-                isFound = true;
-            }
-        });
-        if (!isFound) {
-            newMessage.text = "Извините, не могу ответить на ваш вопрос";
-        }
+        // words.forEach(word => {
+        //     if (analyzer[word]) {
+        //         newMessage.text = analyzer[word];
+        //         isFound = true;
+        //     }
+        // });
+        // if (!isFound) {
+            newMessage.text = "Спасибо, ваш вопрос отправлен.\nСкоро мы вам овтетим";
+        // }
         const newMessages = GiftedChat.append(this.state.messages, [newMessage]);
         this.setState({messages: newMessages});
     }

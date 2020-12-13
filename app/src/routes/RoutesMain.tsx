@@ -31,7 +31,7 @@ const RoutesMain: React.FC<any> = () => {
                 component={CameraSnapshot}
                 options={{
                     tabBarIcon: ({ color }) => (
-                        <MaterialCommunityIcons name="camera" color={color} size={26} />
+                        <MaterialCommunityIcons name="leaf" color={color} size={26} />
                     ),
                 }}
             />
